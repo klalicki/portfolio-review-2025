@@ -1,73 +1,76 @@
 :root {
-    --sans-font: "Inclusive Sans",
-        Verdana,
-        Geneva,
-        Tahoma,
-        sans-serif;
-
+  --sans-font: "Inclusive Sans", Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-    font-family: var(--sans-font);
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    position: relative;
-    background: url(greenhouse.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
+  font-family: var(--sans-font);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  background: url(greenhouse.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-body>header {
-    position: fixed;
-    width: 100vw;
-    padding: 0;
+body > header {
+  position: fixed;
+  width: 100vw;
+  padding: 0;
 }
 
-header>nav {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    right: 0;
-    bottom: 0;
-    background-color: var(--bg);
-    border: 1px solid var(--border);
+header > nav {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 0;
+  bottom: 0;
+  background-color: var(--bg);
+  border: 1px solid var(--border);
 }
 
-header>nav a {
-    background: var(--accent-bg);
+header > nav a {
+  background: var(--accent-bg);
 }
 
 main {
-    margin-top: 150px;
-    margin-bottom: 300px;
-    background: var(--bg);
-    border: var(--border) 1px solid;
-    border-radius: 9px;
-    padding-top: 0px;
-    -webkit-box-shadow: 0px 3px 16px -1px rgba(0, 0, 0, 0.22);
-    -moz-box-shadow: 0px 3px 16px -1px rgba(0, 0, 0, 0.22);
-    box-shadow: 0px 3px 16px -1px rgba(0, 0, 0, 0.22);
+  margin-top: 150px;
+  margin-bottom: 300px;
+  background: var(--bg);
+  border: var(--border) 1px solid;
+  border-radius: 9px;
+  padding-top: 0px;
+  -webkit-box-shadow: 0px 3px 16px -1px rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: 0px 3px 16px -1px rgba(0, 0, 0, 0.22);
+  box-shadow: 0px 3px 16px -1px rgba(0, 0, 0, 0.22);
 }
 
 h1,
 h2,
 h3 {
-    font-family: "Bagel Fat One", serif;
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Bagel Fat One", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-body>footer {
-    background: var(--bg);
-    width: 100vw;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+body > footer {
+  background: var(--bg);
+  width: 100vw;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
 iframe {
-    border: solid var(--border) 2px;
-    border-radius: 9px;
+  border: solid var(--border) 2px;
+  border-radius: 9px;
+}
+
+main > section:first-child {
+  margin-top: 0;
+}
+
+main > section:last-child {
+  margin-bottom: 1rem;
 }
